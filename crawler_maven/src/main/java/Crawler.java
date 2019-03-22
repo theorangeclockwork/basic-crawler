@@ -56,7 +56,7 @@ class Crawler {
 
     private void scrapAndStore(Document doc) throws IOException {
 
-        File oFile = new File("C:\\java projects\\crawler\\crawler_maven\\src\\main\\resources\\out", count + ".txt");
+        File oFile = new File("C:\\java projects\\crawler\\crawler_maven\\src\\main\\resources\\crawler_out", count + ".txt");
         boolean success = oFile.createNewFile();
         System.out.println(success);
         FileWriter writer = new FileWriter(oFile);
@@ -69,7 +69,7 @@ class Crawler {
     }
 
     void createResult() throws IOException {
-        File oFile = new File("C:\\java projects\\crawler\\crawler_maven\\src\\main\\resources\\out", "index.txt");
+        File oFile = new File("C:\\java projects\\crawler\\crawler_maven\\src\\main\\resources\\crawler_out", "index.txt");
         boolean success = oFile.createNewFile();
         System.out.println(success);
         FileWriter writer = new FileWriter(oFile);
